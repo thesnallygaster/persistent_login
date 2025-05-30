@@ -19,7 +19,7 @@
 		"password"
 	],
 	"homepage": "https://github.com/thesnallygaster/persistent_login",
-	"version": "5.4.0",
+	"version": "5.5.0",
 	"authors": [
 		{
 			"name": "Manuel Freiholz",
