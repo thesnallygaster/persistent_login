@@ -27,10 +27,6 @@ $(document).ready(function () {
 						<td class="title">` + rcmail.gettext('ifpl_rememberme', 'persistent_login') + `</td>
 						<td><input type="checkbox" id="_ifpl" name="_ifpl" value="1"></td>
 					</tr>
-					<tr id="ifpl-hint" style="display: none;">
-						<td></td>
-						<td class="ifpl-hint" style="padding: 5px;">` + rcmail.gettext('ifpl_rememberme_hint', 'persistent_login') + `</td>
-					</tr>
 				`;
 			}
 			else if (skin == 'elastic') {
@@ -47,9 +43,6 @@ $(document).ready(function () {
 							</div>
 						</td>
 					</tr>
-					<tr id="ifpl-hint" class="form-group row" style="display: none;">
-						<td class="ifpl-hint" colspan="2">` + rcmail.gettext('ifpl_rememberme_hint', 'persistent_login') + `</td>
-					</tr>
 				`;
 			}
 			// The default HTML content, for all unknown skins.
@@ -58,7 +51,6 @@ $(document).ready(function () {
 					<div id="ifplcontainer">
 						<input id="_ifpl" name="_ifpl" type="checkbox"  value="1">
 						<label for="_ifpl" style="display: inline-block;">` + rcmail.gettext('ifpl_rememberme', 'persistent_login') + `</label>
-						<p id="ifpl-hint" class="ifpl-hint" style="display: none;">` + rcmail.gettext('ifpl_rememberme_hint', 'persistent_login') + `</p>
 					</div>
 				`;
 			}
@@ -71,18 +63,6 @@ $(document).ready(function () {
 			else {
 				$('form').append(html);
 			}
-
-			// show hint.
-			$('#_ifpl').click(function () {
-				var t = $(this);
-				if (t.is(':checked')) {
-					$('#ifpl-hint').show();
-				}
-				else {
-					$('#ifpl-hint').hide();
-				}
-			});
-
 		});
 
 	} // if (window.rcmail)
