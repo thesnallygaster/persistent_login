@@ -39,4 +39,4 @@ $rcmail_config['ifpl_use_auth_tokens'] = true;
 ```
 
 [roundcube]: http://roundcube.net/
-[github-release]: https://github.com/mfreiholz/persistent_login/releases
+[github-release]: https://github.com/thesnallygaster/persistent_login/releases
